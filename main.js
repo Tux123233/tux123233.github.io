@@ -12,6 +12,9 @@ function get_size_rank(board){
         }
     }
 
+    box.sort((a, b) => a - b);
+    box = box.filter(n => n <= 8)
+
     if (box[Math.floor(Math.random() * box.length)] == undefined){
         return 2
     }
@@ -25,6 +28,7 @@ function set_block_style(block, value){
 
         block.innerHTML = ""
     }else if (value == 2){
+        block.style.color = "#776e65"
         block.style.backgroundColor = "#eee4da";
         block.style.boxShadow = "0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);"
 
