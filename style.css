@@ -14,25 +14,13 @@ body{
     margin: 0;
 }
 
-#game-name{
-    display: block;
-    position: relative;
-
-    margin-top: 30px;
-
-    text-align: center;
-    font-size: 40px;
-    color: var(--fontcolor);
-    font-weight: bolder;
-}
-
 #future-block{
     width: 70px;
     height: 70px;
 
     position: relative;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 15px;
 
     box-sizing: border-box;
     border: 6px solid var(--buttoncolor);
@@ -47,18 +35,18 @@ body{
 
 #fall{
     display: flex;
-    width: 360px;
+    width: 80vw;
 
     position: relative;
     margin: auto;
     margin-top: 30px;
 
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .falling{
-    width: 70px;
-    height: 70px;
+    width: 16vw;
+    height: 16vw;
     
     box-sizing: border-box;
     border-radius: 50%;
@@ -69,8 +57,8 @@ body{
 }
 
 #borad{
-    width: 360px;
-    height: 360px;
+    width: 80vw;
+    height: 80vw;
 
     position: relative;
     margin: auto;
@@ -86,8 +74,8 @@ body{
 }
 
 .row div{
-    width: 75px;
-    height: 75px;
+    width: 16vw;
+    height: 16vw;
 
     position: relative;
     margin-top: 12px;
@@ -95,14 +83,14 @@ body{
     border-radius: 3px;
 
     text-align: center;
-    line-height: 75px;
+    line-height: 16vw;
     font-size: 30px;
     font-weight: bolder;
     color: var(--fontcolor);
 }
 
 #force{
-    width: 360px;
+    width: 80vw;
 
     display: flex;
 
@@ -114,7 +102,7 @@ body{
 }
 
 .forcing{
-    width: 140px;
+    width: 30vw;
     height: 70px;
 
     background-color: var(--scoreback);
@@ -132,5 +120,4 @@ body{
     position: absolute;
     bottom: 10px;
 
-    font-weight: bold;
 }
