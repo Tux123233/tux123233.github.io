@@ -1,0 +1,136 @@
+@import url("./tool.css");
+
+@font-face{
+    font-family: "siyuan";
+    src: url("./SourceHanSansSC-Regular-2.otf");
+}
+
+*{
+    font-family: "siyuan";
+}
+
+body{
+    background-color: var(--backcolor);
+    margin: 0;
+}
+
+#game-name{
+    display: block;
+    position: relative;
+
+    margin-top: 30px;
+
+    text-align: center;
+    font-size: 40px;
+    color: var(--fontcolor);
+    font-weight: bolder;
+}
+
+#future-block{
+    width: 70px;
+    height: 70px;
+
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+
+    box-sizing: border-box;
+    border: 6px solid var(--buttoncolor);
+    border-radius: 3px;
+
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--fontcolor);
+}
+
+#fall{
+    display: flex;
+    width: 360px;
+
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+
+    justify-content: space-between;
+}
+
+.falling{
+    width: 70px;
+    height: 70px;
+    
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid var(--buttoncolor);
+    box-shadow: 0px 0px 4px gray;
+
+    background-color: var(--scoreback);
+}
+
+#borad{
+    width: 360px;
+    height: 360px;
+
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+
+    background-color: var(--scoreback);
+    border-radius: 6px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row div{
+    width: 75px;
+    height: 75px;
+
+    position: relative;
+    margin-top: 12px;
+
+    border-radius: 3px;
+
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--fontcolor);
+}
+
+#force{
+    width: 360px;
+
+    display: flex;
+
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+
+    justify-content: space-between;
+}
+
+.forcing{
+    width: 140px;
+    height: 70px;
+
+    background-color: var(--scoreback);
+    box-shadow: 0px 0px 4px rgb(179, 179, 179);
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 5px solid var(--buttoncolor);
+}
+
+#author{
+    width: 100vw;
+    text-align: center;
+
+    position: absolute;
+    bottom: 10px;
+
+    font-weight: bold;
+}

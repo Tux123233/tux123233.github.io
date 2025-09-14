@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>重力2048</title>
+</head>
+<body>
+    <header>
+        <span id="game-name">Gravity 2048</span>
+    </header>
+
+    <!-- 未来的下落方块 -->
+    <div id="future-block"></div>
+
+    <!-- 控制下落位置的按钮 -->
+    <div id="fall">
+        <div class="falling" id="fall-0"></div>
+        <div class="falling" id="fall-1"></div>
+        <div class="falling" id="fall-2"></div>
+        <div class="falling" id="fall-3"></div>
+    </div>
+
+    <!-- 游戏棋盘 -->
+    <div id="borad">
+        <div class="row">
+            <div id="row0-0"></div>
+            <div id="row0-1"></div>
+            <div id="row0-2"></div>
+            <div id="row0-3"></div>
+        </div>
+
+        <div class="row">
+            <div id="row1-0"></div>
+            <div id="row1-1"></div>
+            <div id="row1-2"></div>
+            <div id="row1-3"></div>
+        </div>
+
+        <div class="row">
+            <div id="row2-0"></div>
+            <div id="row2-1"></div>
+            <div id="row2-2"></div>
+            <div id="row2-3"></div>
+        </div>
+
+        <div class="row">
+            <div id="row3-0"></div>
+            <div id="row3-1"></div>
+            <div id="row3-2"></div>
+            <div id="row3-3"></div>
+        </div>
+    </div>
+
+    <!-- 力控制按钮 -->
+    <div id="force">
+        <div class="forcing" id="force-left"></div>
+        <div class="forcing" id="force-right"></div>
+    </div>
+
+    <!-- 作者 -->
+    <div id="author">
+        Copyright 2025/9/14 林思帆
+    </div>
+</body>
+</html>
+
+<script src="./main.js"></script>
