@@ -4,10 +4,10 @@ function get_size_rank(board){
 
     for (let i = 0; i < board.length; i++) {
         for (let j = 0; j < board[0].length; j++) {
-            if (box.includes(board[i][j]) || board[i][j] == 0){
+            if (box.includes(board[i][j]) || board[i][j] == 0){     // 排除重复
                 continue
             }else{
-                box.push(board[i][j])
+                box.push(board[i][j])   
             }
         }
     }
@@ -22,8 +22,10 @@ function get_size_rank(board){
     return box[Math.floor(Math.random() * box.length)]
 }
 
-function set_block_style(block, value){
+function set_block_style(block, value){     //设置方块样式
     if (value == 0){
+        block.style.color = "#776e65"
+        block.style.boxShadow = ""
         block.style.backgroundColor = "rgba(238, 228, 218, 0.35)"
 
         block.innerHTML = ""
@@ -217,7 +219,9 @@ class Board{
 
 let board = new Board()
 
-document.getElementById("fall-0").addEventListener("click", function(){
+//控制
+
+document.getElementById("row0-0").addEventListener("click", function(){
     let result = board.generate_block(0)
     setTimeout(() => {
         board.draw(result[0])
@@ -227,7 +231,7 @@ document.getElementById("fall-0").addEventListener("click", function(){
     }, 250)
 })
 
-document.getElementById("fall-1").addEventListener("click", function(){
+document.getElementById("row0-1").addEventListener("click", function(){
     let result = board.generate_block(1)
     setTimeout(() => {
         board.draw(result[0])
@@ -237,7 +241,7 @@ document.getElementById("fall-1").addEventListener("click", function(){
     }, 250)
 })
 
-document.getElementById("fall-2").addEventListener("click", function(){
+document.getElementById("row0-2").addEventListener("click", function(){
     let result = board.generate_block(2)
     setTimeout(() => {
         board.draw(result[0])
@@ -247,7 +251,7 @@ document.getElementById("fall-2").addEventListener("click", function(){
     }, 250)
 })
 
-document.getElementById("fall-3").addEventListener("click", function(){
+document.getElementById("row0-3").addEventListener("click", function(){
     let result = board.generate_block(3)
     setTimeout(() => {
         board.draw(result[0])

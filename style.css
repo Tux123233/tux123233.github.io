@@ -1,8 +1,13 @@
-@import url("./tool.css");
-
 @font-face{
     font-family: "siyuan";
     src: url("./SourceHanSansSC-Regular-2.otf");
+}
+
+:root{
+    --backcolor: #FAF8EF;
+    --fontcolor: #776e65;
+    --scoreback: #bbada0;
+    --buttonback: #ac927b;
 }
 
 *{
@@ -14,54 +19,66 @@ body{
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 50px;
+}
+
+#infor{
+    width: 330px;
+
+    display: flex;
+    position: relative;
+    margin: auto;
+
+    justify-content: space-between;
+}
+
+#score, #times{
+    width: 90px;
+    height: 70px;
+
+    box-sizing: border-box;
+    padding-top: 10px;
+
+    background-color: var(--scoreback);
+
+    border-radius: 5px;
+}
+
+#times-number, #score-number{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.topic{
+    color: #eee4da;
+    text-align: center;
+    font-weight: bolder;
+
+    position: relative;
 }
 
 #future-block{
-    width: 70px;
-    height: 70px;
-
-    position: relative;
-    margin: auto;
-    margin-top: 15px;
+    width: 67px;
+    height: 67px;
 
     box-sizing: border-box;
-    border: 6px solid var(--buttoncolor);
+    border: 6px solid var(--scoreback);
     border-radius: 3px;
 
     text-align: center;
-    line-height: 60px;
+    line-height: 55px;
     font-size: 30px;
     font-weight: bolder;
     color: var(--fontcolor);
 }
 
-#fall{
-    display: flex;
-    width: 80vw;
-
-    position: relative;
-    margin: auto;
-    margin-top: 30px;
-
-    justify-content: space-around;
-}
-
-.falling{
-    width: 16vw;
-    height: 16vw;
-    
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: 5px solid var(--buttoncolor);
-    box-shadow: 0px 0px 4px gray;
-
-    background-color: var(--scoreback);
-}
-
 #borad{
-    width: 80vw;
-    height: 80vw;
+    width: 330px;
+    height: 330px;
 
+    box-sizing: border-box;
     position: relative;
     margin: auto;
     margin-top: 30px;
@@ -76,8 +93,8 @@ body{
 }
 
 .row div{
-    width: 16vw;
-    height: 16vw;
+    width: 67px;
+    height: 67px;
 
     position: relative;
     margin-top: 12px;
@@ -92,33 +109,32 @@ body{
 }
 
 #force{
-    width: 80vw;
+    width: 320px;
 
     display: flex;
+    justify-content: space-between;
 
     position: relative;
     margin: auto;
-    margin-top: 40px;
-
-    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .forcing{
-    width: 30vw;
+    width: 100px;
     height: 70px;
 
-    background-color: var(--scoreback);
-    box-shadow: 0px 0px 4px rgb(179, 179, 179);
+    border-radius: 10px;
+    background-color: var(--buttonback);
 
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 5px solid var(--buttoncolor);
+    display: flex;
+    justify-content: center;
+
 }
 
 #author{
     width: 90vw;
     text-align: center;
 
-    position: relative;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 5px;
 }

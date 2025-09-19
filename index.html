@@ -7,15 +7,20 @@
     <title>重力2048</title>
 </head>
 <body>
-    <!-- 未来的下落方块 -->
-    <div id="future-block"></div>
-
-    <!-- 控制下落位置的按钮 -->
-    <div id="fall">
-        <div class="falling" id="fall-0"></div>
-        <div class="falling" id="fall-1"></div>
-        <div class="falling" id="fall-2"></div>
-        <div class="falling" id="fall-3"></div>
+    <!-- 信息 -->
+    <div id="infor">
+        <!-- 分数 -->
+        <div id="score">
+            <div class="topic">分数</div>
+            <div id="score-number">0</div>
+        </div>
+        <!-- 未来方块 -->
+        <div id="future-block"></div>
+        <!-- 次数 -->
+        <div id="times">
+            <div class="topic">次数</div>
+            <div id="times-number">0</div>
+        </div>
     </div>
 
     <!-- 游戏棋盘 -->
@@ -49,15 +54,18 @@
         </div>
     </div>
 
-    <!-- 力控制按钮 -->
+    <!-- 重力控制按钮 -->
     <div id="force">
-        <div class="forcing" id="force-left"></div>
-        <div class="forcing" id="force-right"></div>
+        <div class="forcing" id="force-left">
+            <img src="./arrow-left.svg" alt="左箭头" width="50px">
+        </div>
+        <div class="forcing" id="force-right">
+            <img src="./arrow-right.svg" alt="右箭头" width="50px">
+        </div>
     </div>
 
-    <!-- 作者 -->
     <div id="author">
-        Copyright 2025/9/14 林思帆
+        Copyright © 2025 Lin Sifan
     </div>
 </body>
 </html>
