@@ -61,15 +61,14 @@ body{
 }
 
 #future-block{
-    width: 67px;
-    height: 67px;
+    width: 59px;
+    height: 59px;
 
-    box-sizing: border-box;
     border: 6px solid var(--scoreback);
     border-radius: 3px;
 
     text-align: center;
-    line-height: 70px;
+    line-height: 59px;
     font-size: 30px;
     font-weight: bolder;
     color: var(--fontcolor);
@@ -103,7 +102,7 @@ body{
     border-radius: 3px;
 
     text-align: center;
-    line-height: 65px;
+    line-height: 67px;
     font-size: 30px;
     font-weight: bolder;
     color: var(--fontcolor);
